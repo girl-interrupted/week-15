@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+    <style>
+        .container{
+            width:100vw;
+            height:100vh;
+            display:flex;
+            flex-direction: column;
+            align-items:center;
+            justify-content: center;
+
+            background-color: rgb(216, 177, 126);
+        }
+        #mainTitle{
+            font-size:3vw;
+        }
+        .labelContainer{
+            margin-bottom: 20px;
+        }
+        .formLabel,
+        #mainTitle{
+            color: rgb(105, 25, 25);
+        }
+        .userInput{
+            border: none;
+            background-color: rgb(241, 203, 153);
+        }
+        .button{
+            width:100%;
+            height:20%;
+            border:none;
+            background-color: rgb(105, 25, 25);
+            color: rgb(241, 203, 153);;
+
+        }
+    </style>
+</head>
+<body>
+    <section class="container">
+        <h1 id="mainTitle">Sign up to our newsletter</h1>
+        <form id="form">
+        <div class="labelContainer">
+            <label for="firstName" class="formLabel">Your Name:</label>
+            <input type="text" class="userInput" id="firstName" placeholder="Enter your name here"><br>
+        </div>
+        <div class="labelContainer">
+            <label for="lastName" class="formLabel">Last Name:</label>
+            <input type="text" class="userInput" id="lastName" placeholder="Enter your last name here"><br>
+        </div>
+        <div class="labelContainer">
+            <label for="homeTown" class="formLabel">Your Hometown:</label>
+            <input type="text" class="userInput" id="homeTown" placeholder="What's your hometown?"><br>
+        </div>
+        <div class="labelContainer">
+            <label for="email" class="formLabel">Email:</label>
+            <input type="email" class="userInput" id="email" placeholder="What's your email?"><br>
+        </div>
+        <div class="labelContainer">
+            <label for="password" class="formLabel">Password:</label>
+            <input type="password" class="userInput" id="password" placeholder="Enter your password"><br>
+        </div>
+        <div class="labelContainer">
+            <label for="password" class="formLabel">Repeat password:</label>
+            <input type="password" class="userInput" id="passwordRepeat" placeholder="Confirm password"><br>
+        </div>
+            <button type="button" class="button" id="button" onclick="signUp();">Sign Up Now</button>
+
+        </form>
+    </section>
+
+    <script src="form.js"></script>
+</body>
+</html>
