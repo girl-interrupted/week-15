@@ -1,0 +1,27 @@
+.main-container {
+    display: flex;
+    
+}
+
+.section-container {
+    width: 40vw;
+    height: 15vh;
+
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;
+    align-items: center;
+}
+
+h2 {
+    margin-left: 5vw;
+}
+
+#btn {
+    width: 40vw;
+    height: 10vh;
+    background-color: rgb(192, 79, 79);
+
+    border: none;
+
+}
